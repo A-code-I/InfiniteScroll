@@ -4,9 +4,11 @@ const loader=document.getElementById('loader');
 let photosArray=[];
 // Unsplash API
 const count=5;
+const topic='church';
+const collections='Jesus';
 const api_key='pzUppk1cHNzwwbjdYs7lZo5QjZqh0VXIe_XreLfEI44';
 // const api_key='Ec9_2tLPsKQGvKrZ5Bwb81-jtKpupAwfNCXcqrpl8BU';
-const apiUrl=`https://api.unsplash.com/photos/random?client_id=${api_key}&count=${count}`;
+const apiUrl=`https://api.unsplash.com/photos/random?client_id=${api_key}&collections=${collections}&topics=${topic}&count=${count}`;
 
 // Helper function to setAttributes on DOM Elements
 function setAttributes(element,attributes){
