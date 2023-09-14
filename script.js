@@ -3,7 +3,7 @@ const loader=document.getElementById('loader');
 
 let photosArray=[];
 // Unsplash API
-const count=5;
+const count=30;
 const topic='church';
 const collections='Jesus';
 const api_key='pzUppk1cHNzwwbjdYs7lZo5QjZqh0VXIe_XreLfEI44';
