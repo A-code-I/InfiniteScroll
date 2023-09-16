@@ -9,12 +9,14 @@ let totalImages=0;
 
 // Unsplash API
 const count=5;
-const topic='church';
-const collections='Jesus';
-const api_key='HD9nnO1thKkhfDmKIRRj-dRDjvxs5fHYHodqC6ftgg4';  //slow tes2
-// const api_key='pzUppk1cHNzwwbjdYs7lZo5QjZqh0VXIe_XreLfEI44';
+const reduiredQuery='jesus,bible verses,faith bible'
+// const queryWithExclusion = reduiredQuery + ' -hindu';
+const contentFilter = 'high'; // You can adjust this value as needed
+
+// const api_key='HD9nnO1thKkhfDmKIRRj-dRDjvxs5fHYHodqC6ftgg4';  //slow tes2
+const api_key='pzUppk1cHNzwwbjdYs7lZo5QjZqh0VXIe_XreLfEI44';
 // const api_key='Ec9_2tLPsKQGvKrZ5Bwb81-jtKpupAwfNCXcqrpl8BU';
-const apiUrl=`https://api.unsplash.com/photos/random?client_id=${api_key}&collections=${collections}&topics=${topic}&count=${count}`;
+const apiUrl=`https://api.unsplash.com/photos/random?client_id=${api_key}&query=${reduiredQuery}&count=${count}&content_filter=${contentFilter}`;
 
 // Check if all images were loaded
 function imageLoaded(){
