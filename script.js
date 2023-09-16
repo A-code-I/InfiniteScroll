@@ -8,7 +8,7 @@ let imgLoaded=0;
 let totalImages=0;
 
 // Unsplash API
-const count=5;
+const count=30;
 const reduiredQuery='jesus,bible verses,faith bible'
 // const queryWithExclusion = reduiredQuery + ' -hindu';
 const contentFilter = 'high'; // You can adjust this value as needed
